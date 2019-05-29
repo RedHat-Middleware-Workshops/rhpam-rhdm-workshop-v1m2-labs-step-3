@@ -18,7 +18,7 @@ public class FraudData implements java.io.Serializable {
 	private java.lang.Integer lineItemCount;
 	@org.kie.api.definition.type.Label(value = "MaxDays")
 	private java.lang.Integer maxDaysElapsed;
-	@org.kie.api.definition.type.Label(value = "FroudAmount")
+	@org.kie.api.definition.type.Label(value = "FraudAmount")
 	private java.lang.Float totalFraudAmount;
 
 	public FraudData() {
