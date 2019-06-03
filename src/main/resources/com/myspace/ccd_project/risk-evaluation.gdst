@@ -9,7 +9,20 @@
     <width>305</width>
   </descriptionCol>
   <metadataCols/>
-  <attributeCols/>
+  <attributeCols>
+    <attribute-column52>
+      <typedDefaultValue>
+        <valueString>risk-evaluation</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>100</width>
+      <attribute>ruleflow-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+  </attributeCols>
   <conditionPatterns>
     <Pattern52>
       <factType>CreditCardHolder</factType>
@@ -56,7 +69,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>totalFraudAmount</factField>
           <fieldType>Float</fieldType>
-          <operator>&gt;</operator>
+          <operator>&gt;=</operator>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -72,7 +85,7 @@
           <constraintValueType>1</constraintValueType>
           <factField>totalFraudAmount</factField>
           <fieldType>Float</fieldType>
-          <operator>&lt;=</operator>
+          <operator>&lt;</operator>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -141,7 +154,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Low risk standard costumer</valueString>
+        <valueString>Standard costumer low risk</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>risk-evaluation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -151,7 +169,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="float">0.0</valueNumeric>
+        <valueNumeric class="float">1.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
@@ -182,6 +200,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>risk-evaluation</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Standard</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -193,7 +216,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="float">500.0</valueNumeric>
+        <valueNumeric class="float">250.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
@@ -214,6 +237,11 @@
       </value>
       <value>
         <valueString>Standard customer high risk </valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>risk-evaluation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -248,12 +276,17 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Gold customer low risk</valueString>
+        <valueString>Silver customer low risk </valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Gold</valueString>
+        <valueString>risk-evaluation</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Silver</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -264,7 +297,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="float">500.0</valueNumeric>
+        <valueNumeric class="float">250.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
@@ -284,42 +317,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Gold customer high risk </valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>Gold</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="float">800.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_FLOAT</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>NUMERIC_FLOAT</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="int">2</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">6</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>Silver customer medium risk </valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>risk-evaluation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -349,18 +352,63 @@
     </list>
     <list>
       <value>
+        <valueNumeric class="int">6</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Silver customer high risk</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>risk-evaluation</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Silver</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="float">500.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
         <valueNumeric class="int">7</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Silver customer low risk </valueString>
+        <valueString>Gold customer low risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Silver</valueString>
+        <valueString>risk-evaluation</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Gold</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -371,13 +419,53 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="float">250.0</valueNumeric>
+        <valueNumeric class="float">500.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueNumeric class="int">0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">8</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Gold customer medium risk </valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>risk-evaluation</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Gold</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="float">500.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
