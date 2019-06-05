@@ -9,20 +9,7 @@
     <width>305</width>
   </descriptionCol>
   <metadataCols/>
-  <attributeCols>
-    <attribute-column52>
-      <typedDefaultValue>
-        <valueString>risk-evaluation</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
-      <hideColumn>false</hideColumn>
-      <width>100</width>
-      <attribute>ruleflow-group</attribute>
-      <reverseOrder>false</reverseOrder>
-      <useRowNumber>false</useRowNumber>
-    </attribute-column52>
-  </attributeCols>
+  <attributeCols/>
   <conditionPatterns>
     <Pattern52>
       <factType>CreditCardHolder</factType>
@@ -159,11 +146,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>risk-evaluation</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>Standard</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -196,11 +178,6 @@
       </value>
       <value>
         <valueString>Standard customer medium risk</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>risk-evaluation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -241,11 +218,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>risk-evaluation</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>Standard</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -277,11 +249,6 @@
       </value>
       <value>
         <valueString>Silver customer low risk </valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>risk-evaluation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -322,11 +289,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>risk-evaluation</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>Silver</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -359,11 +321,6 @@
       </value>
       <value>
         <valueString>Silver customer high risk</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>risk-evaluation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -403,11 +360,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>risk-evaluation</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>Gold</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -440,11 +392,6 @@
       </value>
       <value>
         <valueString>Gold customer medium risk </valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>risk-evaluation</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
