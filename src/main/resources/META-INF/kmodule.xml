@@ -2,4 +2,4 @@
      <kbase name="ccd-kbase" default="true" eventProcessingMode="cloud">
         <ksession name="ccd-ksession" default="true" type="stateless"/>
     </kbase>
-<kmodule>
+</kmodule>
