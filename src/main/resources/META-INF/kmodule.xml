@@ -1,1 +1,6 @@
-<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+     <kbase name="ccd-kbase">
+        <ksession name="ccd-ksession" type="stateless"/>
+    </kbase>
+<kmodule>
+
