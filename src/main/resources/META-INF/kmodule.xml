@@ -1,6 +1,5 @@
 <kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-     <kbase name="ccd-kbase">
-        <ksession name="ccd-ksession" type="stateless"/>
+     <kbase name="ccd-kbase" default="true" eventProcessingMode="cloud">
+        <ksession name="ccd-ksession" default="true" type="stateless"/>
     </kbase>
 <kmodule>
-
